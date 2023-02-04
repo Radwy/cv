@@ -1,3 +1,15 @@
-.nav-border {
-    border-radius: 0px 0px 10px 10px;
+nav{
+    color: #eee;
+}
+.card-perso{
+    margin: 30px;
+    color: #eee;
+}
+.bg-r-blue{
+    background-color: #277bd2;
+    color: #eee;
+}
+
+img{
+    width: 50px;
 }
