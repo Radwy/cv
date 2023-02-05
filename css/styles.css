@@ -13,3 +13,13 @@ nav{
 img{
     width: 50px;
 }
+
+.cardLeftPart {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cardRightPart{
+    padding-bottom: 2em;  
+}

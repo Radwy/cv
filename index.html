@@ -4,86 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV Raoul</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
-    <script type='text/javascript' src='javascript.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="formations.json"></script> -->
+    <script type='text/javascript' src='js/javascript.js'></script>
+
+    <link href="test.tmpl.html">
   </head>
-  <body onload="addToDay()">  
+  <body>  
     <nav class="navbar sticky-top bg-r-blue"> 
       <div class="container-fluid" >
-        <h1 class="navbar-brand" href=>Raoul</h1>
+        <h1 class="navbar-brand">Raoul</h1>
       </div>
     </nav>
     <div class="row justify-content-center">
       <div class="col-md-4">
-        <div class="card text-center card-perso bg-r-blue" style="background-color: #277bd2;" data-bs-toggle="collapse" href="#formation" role="button" aria-expanded="false" aria-controls="formation experience"> 
+        <div class="card text-center card-perso bg-r-blue" style="background-color: #277bd2;" data-bs-toggle="collapse" href="#cardBodyFormation" role="button" aria-expanded="false" aria-controls="formation experience"> 
           <div class="card-header bg-r-blue">
             Formation
           </div>
+          <div id="cardBodyFormation" class="card card-body">
 
-          <div class="collapse multi-collapse" style="color:#212529bf" id="formation">
-            <div class="card card-body">
-              <h5 class="card-title" style="color:#212529bf" >AJC Formation</h5>
-              <h6 class="card-title">2021 - 2021</h6>
-              <div class="row">
-                <div class="col-2"></div>
-                <div class="col-10">
-
-                </div>
-              </div>
-                <div class="row">
-                  <div class="col-2">
-                    <img src="img/logo_AJC_formation_PNG.png" alt="ajc">
-                  </div>
-                  <div class="col-10" style="text-align: left;" >
-                    <p class="card-text">Test et automatisation de test - Certification ISTQB Tester Foundation</p>
-                  </div>
-                </div>
-                <h5 class="card-title" style="color:#212529bf">O'clock</h5>
-                <h6 class="card-title">2019 - 2019</h6>
-                <div class="row">
-
-                  <div class="col-2"></div>
-                  <div class="col-10">
-
-
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-2">
-                    <img src="img/05022022_1511091583833569-12663-O'clock.png" alt="oclock">
-                  </div>
-                  <div class="col-10">
-                    <p class="card-text" style="text-align: left;">Formation de développement web</p>
-                  </div>
-                </div>
-
-                <h5 class="card-title" style="color:#212529bf">ICAM</h5>
-                <h6 class="card-title">2011 - 2016</h6>
-                <div class="row">
-                  <div class="col-2"></div>
-                  <div class="col-10">
-
-
-                  </div>
-                </div>
-
-
-                <div class="row">
-                  <div class="col-2">
-                    <img src="img/Logo-ICAM-2008.png" alt="icam">
-                  </div>
-                  <div class="col-10">
-                    <p class="card-text" style="text-align: left;">Diplôme d'ingénieur généraliste</p>
-                  </div>
-                </div>       
-              </div>
-            
-          </div>
-      
-          <div class="card-footer text-muted">
-            2011-2016
           </div>
         </div>
       </div>
@@ -104,16 +46,39 @@
           </div>
       
           <div class="card-footer text-muted" id="today">
-              2016 - 
+
           </div>
         </div>
       </div>
     </div>
 
+ 
+
+
+    <script id="tmplFormation" type="text/template">
+      <div class="row" style="color: #212529bf;">
+        <div class="col-2 cardLeftPart">
+          <img src="{{formationImage}}" alt="image">
+        </div>
+        <div class="col-10 cardRightPart">
+          <h5 class="card-title">{{formationName}}</h5>
+          <h6 class="card-title">{{formationBegin}} - {{formationEnd}}</h6>
+          <p class="card-text">{{formationTitre}}</p>
+        </div>
+      </div>
+    </script>
     
     
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+   
+  
+
+
   </body>
+
+ 
 </html>

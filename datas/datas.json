@@ -1,0 +1,42 @@
+{
+  "formations": [
+    {
+        "formationName": "ICAM",
+        "formationBegin": "2011",
+        "formationEnd": "2016",
+        "formationTitre": "Diplôme d'ingénieur généraliste",
+        "formationImage": "img/icam.png"
+      },
+      {
+        "formationName": "AJC Formation",
+        "formationBegin": "2021",
+        "formationEnd": "2021",
+        "formationTitre": "Formation de 3 de Test et automatisation de test - Certification ISTQB Tester Foundation",
+        "formationImage": "img/ajc.png"
+      },
+      {
+        "formationName": "O'Clock",
+        "formationBegin": "2019",
+        "formationEnd": "2019",
+        "formationTitre": "Formation de 3 mois de développement web",
+        "formationImage": "img/oclock.png"
+      },
+      {
+        "formationName": "M2I formation",
+        "formationBegin": "2017",
+        "formationEnd": "2017",
+        "formationTitre": "Formation de 1 mois de développement web",
+        "formationImage": "img/m2i.png"
+      },
+      {
+        "formationName": "Ozanam Lille",
+        "formationBegin": "2011",
+        "formationEnd": "2013",
+        "formationTitre": " BTSConception et Réalisation de Systèmes Automatiques ",
+        "formationImage": "img/ozanam.png"
+      }
+]
+}
+
+    
+
